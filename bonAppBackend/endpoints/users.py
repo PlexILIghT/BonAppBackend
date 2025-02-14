@@ -5,7 +5,6 @@ from ..database import SessionLocal
 
 router = APIRouter(prefix="/users", tags=["users"])
 
-# Dependency
 def get_db():
     db = SessionLocal()
     try:
